@@ -2,6 +2,7 @@
 
 docker run --detach \
      --name woot-math-wordpress \
-     --link web-content-mysql:mysql \
+     --network=dock_net \
+     --env="WORDPRESS_DB_HOST=web-content-mysql:3306"
      -p 80:80 \
      wordpress

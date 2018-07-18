@@ -8,6 +8,6 @@ docker run --detach \
     -v /root/var/www:/var/www \
     -v /root/wp-docker/nginx/etc:/etc/nginx/ \
     -v /root/ssl:/etc/ssl:ro \
-    -p 81:80 -p 443:443 
+    -p 81:80 -p 443:443 \
     nginx
 
